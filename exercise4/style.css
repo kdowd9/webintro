@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: rgb(255, 194, 204);
+}
+
+h1 {
+  text-align: center;
+  font-size: 9vw;
+  line-height: 1;
+  color: white;
+  text-shadow: 5px 5px 5px rgb(255, 149, 149);
+}
+
+#headline {
+  width: 80%;
+  margin: 50px auto;
+  position: relative;
+}
+
+h2 {
+  font-size: 5vw;
+  line-height: 1;
+  color: rgb(255, 149, 149);
+  margin: 100px 0 40px 50px;
+  text-transform: uppercase;
+}
+
+
+#hair, #nails, #watch, #shoes, #fabric {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin: 0 auto 100px auto;
+  width: 85%;
+}
+
+
+.dryer, .acrylic, .swatch, .tabis, .metallic {
+  width: 40%;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.info {
+  width: 50%;
+  color: white;
+  font-size: 1.3vw;
+  line-height: 1.5;
+}
+
+
+.dryer {
+  background-image: url('images/hair.png');
+}
+
+.acrylic {
+  background-image: url('images/nails.png');
+}
+
+.swatch {
+  background-image: url('images/swatch.png');
+}
+
+.tabis {
+  background-image: url('images/tabis.png');
+}
+
+.metallic {
+  background-image: url('images/fabric.png');
+}
+
+
+@media (max-width: 900px) {
+  #hair, #nails, #watch, #shoes, #fabric {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .dryer, .acrylic, .swatch, .tabis, .metallic {
+    width: 80%;
+    height: 300px;
+  }
+
+  .info {
+    width: 85%;
+    font-size: 3.5vw;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 8vw;
+    margin: 50px 0 20px 0;
+    text-align: center;
+  }
+}
