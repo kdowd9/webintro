@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #4a2e2a;
+  color: #f5e8da;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.lyrics h2 {
+  font-size: 30px;
+  opacity: 0.7;
+  transform: translateY(20px);
+  transition: 0.8s;
+}
+
+.lyrics h2:hover {
+  color: #ffb703;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hover-love {
+  color: #f5e8da;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  transform: scale(0.5);
+  transition: transform 0.5s;
+}
+
+.hover-love:hover {
+  color: #ff4d4d;
+  transform: scale(1);
+}
+
+.pulse-lungs {
+  display: inline-block;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(0.9);}
+  100% {transform: scale(1);}
+}
+
+.click-giveout {
+  color: #ffb703;
+  cursor: pointer;
+  display: inline-block;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.click-giveout:active {
+  transform: scale(0);
+  opacity: 0;
+}
+
+.shake-aint {
+  opacity: 0.7;
+  display: inline-block;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.shake-aint:active {
+  opacity: 1;
+  animation: shake 0.4s;
+}
+
+@keyframes shake {
+  0% {transform: translateX(0);}
+  25% {transform: translateX(-3px);}
+  50% {transform: translateX(3px);}
+  75% {transform: translateX(-3px);}
+  100% {transform: translateX(0);}
+}
+
+
+.spin-lyin {
+  color: #ff4d4d;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.4s, transform 1s;
+}
+
+.spin-lyin:hover {
+  color: #ffffff;
+  transform: rotate(360deg);
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  font-size: 12px;
+  opacity: 0.6;
+}
